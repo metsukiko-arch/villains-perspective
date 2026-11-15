@@ -310,3 +310,16 @@
     font-size: .74rem;
   }
 }
+
+/* Personal story: improve text contrast */
+#personal-story .article-copy p:not(.final-line) {
+  color: #493D37 !important;
+  opacity: 1;
+  font-weight: 450;
+  line-height: 1.9;
+}
+
+#personal-story .article-copy .final-line {
+  color: #713D43;
+  font-weight: 500;
+}
