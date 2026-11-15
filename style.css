@@ -323,3 +323,106 @@
   color: #713D43;
   font-weight: 500;
 }
+
+/* PERSONAL STORY - RAZUMOVSKY */
+
+.personal-story-section {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+.personal-story-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 65px;
+  align-items: start;
+  margin-top: 55px;
+  padding: 45px;
+  background: #171514;
+  border-top: 3px solid #9a5c61;
+  color: #eee5dc;
+}
+
+.personal-story-image {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background: #24211f;
+}
+
+.personal-story-image img {
+  display: block;
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  object-position: center top;
+  filter: saturate(0.8) contrast(1.08);
+  transition: transform 0.7s ease;
+}
+
+.personal-story-image:hover img {
+  transform: scale(1.035);
+}
+
+.personal-story-image figcaption {
+  padding: 14px 12px;
+  background: #211c1b;
+  color: #c09a94;
+  font-size: 0.59rem;
+  letter-spacing: 0.13em;
+  line-height: 1.6;
+}
+
+.personal-story-copy {
+  color: #ded3c9;
+  font-size: 0.91rem;
+  line-height: 2;
+}
+
+.personal-story-copy p {
+  margin: 0 0 23px;
+}
+
+.personal-story-copy .personal-intro {
+  color: #fff5ed;
+  font-family: var(--serif);
+  font-size: 1.65rem;
+  line-height: 1.4;
+  margin-bottom: 35px;
+}
+
+.personal-story-copy em {
+  color: #d0a09a;
+}
+
+.personal-story-copy .personal-highlight {
+  color: #f0c4bc;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  line-height: 1.55;
+  border-left: 3px solid #9a5c61;
+  padding: 12px 0 12px 22px;
+  margin-top: 35px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .personal-story-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 22px;
+  }
+
+  .personal-story-image img {
+    height: 430px;
+  }
+
+  .personal-story-copy .personal-intro {
+    font-size: 1.4rem;
+  }
+
+  .personal-story-copy {
+    font-size: 0.88rem;
+  }
+}
