@@ -426,3 +426,166 @@
     font-size: 0.88rem;
   }
 }
+
+/* ==============================
+   AUDIO INTERVIEWS
+============================== */
+
+.audio-interviews {
+    padding: 110px 8%;
+    background: #171416;
+    color: #eee7e2;
+}
+
+.audio-interviews .section-heading {
+    max-width: 800px;
+    margin-bottom: 55px;
+}
+
+.audio-interviews .section-number {
+    color: #a94c5b;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.audio-interviews .section-heading h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: clamp(36px, 5vw, 58px);
+    margin: 18px 0;
+    color: #f4ece7;
+}
+
+.audio-interviews .section-intro {
+    color: #b9abad;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.interviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.interview-card {
+    background: #211c1f;
+    border: 1px solid #443238;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.interview-card:hover {
+    border-color: #a94c5b;
+    transform: translateY(-4px);
+}
+
+.interview-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.interview-label {
+    color: #c36b79;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.interview-category {
+    color: #9d9094;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.interview-card h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 27px;
+    color: #f1e7e4;
+    margin-bottom: 12px;
+}
+
+.interview-description {
+    color: #b9abad;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 1px solid #49363c;
+    background: #100e0f;
+}
+
+.audio-player iframe {
+    display: block;
+    width: 100%;
+    height: 80px;
+    border: none;
+}
+
+.interview-quote {
+    position: relative;
+    margin-top: auto;
+    padding: 25px 22px 20px;
+    background: #2b2024;
+    border-left: 3px solid #a94c5b;
+}
+
+.interview-quote .quote-mark {
+    display: block;
+    color: #bd6574;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 0.8;
+    margin-bottom: 12px;
+}
+
+.interview-quote blockquote {
+    color: #eee3df;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 19px;
+    line-height: 1.65;
+    font-style: italic;
+    margin: 0 0 20px;
+}
+
+.quote-caption {
+    color: #c36b79;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .audio-interviews {
+        padding: 75px 6%;
+    }
+
+    .interviews-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .interview-card {
+        padding: 24px;
+    }
+
+    .interview-card h3 {
+        font-size: 24px;
+    }
+
+    .interview-quote blockquote {
+        font-size: 17px;
+    }
+}
